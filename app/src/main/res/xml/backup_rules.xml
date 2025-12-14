@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Backup rules for Android Auto Backup (API 31+)
+   See https://developer.android.com/guide/topics/data/autobackup
+-->
+<full-backup-content>
+    <!-- Include database files -->
+    <include domain="database" path="miner_db"/>
+    <include domain="database" path="miner_db-wal"/>
+    <include domain="database" path="miner_db-shm"/>
+    
+    <!-- Include DataStore preferences -->
+    <include domain="file" path="datastore/miner_preferences.preferences_pb"/>
+    <include domain="file" path="datastore/achievement_store.preferences_pb"/>
+    
+    <!-- Exclude cache and temp files -->
+    <exclude domain="cache" path="."/>
+    <exclude domain="file" path="no_backup/"/>
+</full-backup-content>

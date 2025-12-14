@@ -1,0 +1,62 @@
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+> Task :app:kspDebugKotlin UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:mergeDebugShaders UP-TO-DATE
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets UP-TO-DATE
+> Task :app:compressDebugAssets UP-TO-DATE
+> Task :app:desugarDebugFileDependencies UP-TO-DATE
+> Task :app:checkDebugDuplicateClasses UP-TO-DATE
+> Task :app:mergeExtDexDebug UP-TO-DATE
+> Task :app:mergeLibDexDebug UP-TO-DATE
+> Task :app:configureCMakeDebug[arm64-v8a]
+> Task :app:buildCMakeDebug[arm64-v8a]
+> Task :app:configureCMakeDebug[armeabi-v7a]
+> Task :app:buildCMakeDebug[armeabi-v7a]
+> Task :app:configureCMakeDebug[x86_64]
+> Task :app:buildCMakeDebug[x86_64]
+> Task :app:mergeDebugJniLibFolders UP-TO-DATE
+> Task :app:mergeDebugNativeLibs UP-TO-DATE
+> Task :app:stripDebugDebugSymbols UP-TO-DATE
+> Task :app:validateSigningDebug UP-TO-DATE
+> Task :app:writeDebugAppMetadata UP-TO-DATE
+> Task :app:writeDebugSigningConfigVersions UP-TO-DATE
+
+> Task :app:compileDebugKotlin FAILED
+e: file:///D:/Project/Miner/app/src/main/java/com/meetmyartist/miner/ui/screens/StatisticsScreen.kt:228:45 Unresolved reference. None of the following candidates is applicable because of a receiver type mismatch:
+@Composable() fun VerticalAxis.Companion.rememberStart(line: LineComponent? = ..., label: TextComponent? = ..., labelRotationDegrees: Float = ..., horizontalLabelPosition: VerticalAxis.HorizontalLabelPosition = ..., verticalLabelPosition: Position.Vertical = ..., valueFormatter: CartesianValueFormatter = ..., tick: LineComponent? = ..., tickLength: Dp = ..., guideline: LineComponent? = ..., itemPlacer: VerticalAxis.ItemPlacer = ..., size: BaseAxis.Size = ..., titleComponent: TextComponent? = ..., title: CharSequence? = ...): VerticalAxis<Axis.Position.Vertical.Start>
+e: file:///D:/Project/Miner/app/src/main/java/com/meetmyartist/miner/ui/screens/StatisticsScreen.kt:229:46 Unresolved reference. None of the following candidates is applicable because of a receiver type mismatch:
+@Composable() fun HorizontalAxis.Companion.rememberBottom(line: LineComponent? = ..., label: TextComponent? = ..., labelRotationDegrees: Float = ..., valueFormatter: CartesianValueFormatter = ..., tick: LineComponent? = ..., tickLength: Dp = ..., guideline: LineComponent? = ..., itemPlacer: HorizontalAxis.ItemPlacer = ..., size: BaseAxis.Size = ..., titleComponent: TextComponent? = ..., title: CharSequence? = ...): HorizontalAxis<Axis.Position.Horizontal.Bottom>
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 20s
+35 actionable tasks: 7 executed, 28 up-to-date

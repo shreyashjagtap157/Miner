@@ -1,0 +1,225 @@
+
+> Task :app:externalNativeBuildCleanDebug
+Clean miner_native-armeabi-v7a
+Clean miner_native-arm64-v8a
+Clean miner_native-x86_64
+
+> Task :app:externalNativeBuildCleanRelease
+> Task :app:clean
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:generateDebugResValues
+> Task :app:mapDebugSourceSetPaths
+> Task :app:checkDebugAarMetadata
+> Task :app:generateDebugResources
+> Task :app:packageDebugResources
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:parseDebugLocalResources
+> Task :app:extractDeepLinksDebug
+> Task :app:processDebugMainManifest
+> Task :app:processDebugManifest
+> Task :app:processDebugManifestForPackage
+> Task :app:mergeDebugShaders
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets
+> Task :app:compressDebugAssets
+> Task :app:desugarDebugFileDependencies
+> Task :app:javaPreCompileDebug
+> Task :app:configureCMakeDebug[arm64-v8a]
+> Task :app:checkDebugDuplicateClasses
+> Task :app:buildCMakeDebug[arm64-v8a]
+> Task :app:mergeLibDexDebug
+> Task :app:configureCMakeDebug[armeabi-v7a]
+> Task :app:mergeDebugResources
+> Task :app:buildCMakeDebug[armeabi-v7a]
+> Task :app:configureCMakeDebug[x86_64]
+> Task :app:processDebugResources
+> Task :app:buildCMakeDebug[x86_64]
+> Task :app:mergeDebugJniLibFolders
+> Task :app:validateSigningDebug
+> Task :app:writeDebugAppMetadata
+> Task :app:writeDebugSigningConfigVersions
+> Task :app:mergeDebugNativeLibs
+> Task :app:stripDebugDebugSymbols
+> Task :app:mergeExtDexDebug
+> Task :app:kspDebugKotlin
+> Task :app:compileDebugKotlin
+e: org.jetbrains.kotlin.backend.common.BackendException: Backend Internal error: Exception during IR lowering
+File being compiled: D:/Project/Miner/app/src/main/java/com/meetmyartist/miner/ui/components/CryptocurrencySelectorDialog.kt
+The root cause java.lang.RuntimeException was thrown at: org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate(FunctionCodegen.kt:50)
+	at org.jetbrains.kotlin.backend.common.CodegenUtil.reportBackendException(CodegenUtil.kt:253)
+	at org.jetbrains.kotlin.backend.common.CodegenUtil.reportBackendException$default(CodegenUtil.kt:236)
+	at org.jetbrains.kotlin.backend.common.phaser.PerformByIrFilePhase.invokeSequential(performByIrFile.kt:65)
+	at org.jetbrains.kotlin.backend.common.phaser.PerformByIrFilePhase.invoke(performByIrFile.kt:52)
+	at org.jetbrains.kotlin.backend.common.phaser.PerformByIrFilePhase.invoke(performByIrFile.kt:38)
+	at org.jetbrains.kotlin.backend.common.phaser.NamedCompilerPhase.phaseBody(CompilerPhase.kt:166)
+	at org.jetbrains.kotlin.backend.common.phaser.AbstractNamedCompilerPhase.invoke(CompilerPhase.kt:113)
+	at org.jetbrains.kotlin.backend.common.phaser.CompositePhase.invoke(PhaseBuilders.kt:29)
+	at org.jetbrains.kotlin.backend.common.phaser.CompositePhase.invoke(PhaseBuilders.kt:16)
+	at org.jetbrains.kotlin.backend.common.phaser.NamedCompilerPhase.phaseBody(CompilerPhase.kt:166)
+	at org.jetbrains.kotlin.backend.common.phaser.AbstractNamedCompilerPhase.invoke(CompilerPhase.kt:113)
+	at org.jetbrains.kotlin.backend.common.phaser.CompilerPhaseKt.invokeToplevel(CompilerPhase.kt:62)
+	at org.jetbrains.kotlin.backend.jvm.JvmIrCodegenFactory.invokeCodegen(JvmIrCodegenFactory.kt:371)
+	at org.jetbrains.kotlin.codegen.CodegenFactory.generateModule(CodegenFactory.kt:47)
+	at org.jetbrains.kotlin.backend.jvm.JvmIrCodegenFactory.generateModuleInFrontendIRMode(JvmIrCodegenFactory.kt:433)
+	at org.jetbrains.kotlin.cli.jvm.compiler.pipeline.JvmCompilerPipelineKt.generateCodeFromIr(jvmCompilerPipeline.kt:241)
+	at org.jetbrains.kotlin.cli.jvm.compiler.pipeline.JvmCompilerPipelineKt.compileModulesUsingFrontendIrAndLightTree(jvmCompilerPipeline.kt:140)
+	at org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.doExecute(K2JVMCompiler.kt:155)
+	at org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.doExecute(K2JVMCompiler.kt:50)
+	at org.jetbrains.kotlin.cli.common.CLICompiler.execImpl(CLICompiler.kt:104)
+	at org.jetbrains.kotlin.cli.common.CLICompiler.execImpl(CLICompiler.kt:48)
+	at org.jetbrains.kotlin.cli.common.CLITool.exec(CLITool.kt:101)
+	at org.jetbrains.kotlin.incremental.IncrementalJvmCompilerRunner.runCompiler(IncrementalJvmCompilerRunner.kt:453)
+	at org.jetbrains.kotlin.incremental.IncrementalJvmCompilerRunner.runCompiler(IncrementalJvmCompilerRunner.kt:62)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.doCompile(IncrementalCompilerRunner.kt:506)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.compileImpl(IncrementalCompilerRunner.kt:423)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.compileNonIncrementally(IncrementalCompilerRunner.kt:301)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.compile(IncrementalCompilerRunner.kt:129)
+	at org.jetbrains.kotlin.daemon.CompileServiceImplBase.execIncrementalCompiler(CompileServiceImpl.kt:676)
+	at org.jetbrains.kotlin.daemon.CompileServiceImplBase.access$execIncrementalCompiler(CompileServiceImpl.kt:92)
+	at org.jetbrains.kotlin.daemon.CompileServiceImpl.compile(CompileServiceImpl.kt:1661)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.lang.RuntimeException: Exception while generating code for:
+FUN name:CryptocurrencySelectorDialog visibility:public modality:FINAL <> (cryptos:kotlin.collections.List<com.meetmyartist.miner.data.model.Cryptocurrency>, selectedCrypto:com.meetmyartist.miner.data.model.Cryptocurrency?, onCryptoSelected:kotlin.Function1<com.meetmyartist.miner.data.model.Cryptocurrency, kotlin.Unit>, onDismiss:kotlin.Function0<kotlin.Unit>) returnType:kotlin.Unit
+  annotations:
+    OptIn(markerClass = [CLASS_REFERENCE 'CLASS IR_EXTERNAL_DECLARATION_STUB ANNOTATION_CLASS name:ExperimentalMaterial3Api modality:OPEN visibility:public superTypes:[kotlin.Annotation]' type=kotlin.reflect.KClass<androidx.compose.material3.ExperimentalMaterial3Api>])
+    Composable
+  VALUE_PARAMETER name:cryptos index:0 type:kotlin.collections.List<com.meetmyartist.miner.data.model.Cryptocurrency>
+  VALUE_PARAMETER name:selectedCrypto index:1 type:com.meetmyartist.miner.data.model.Cryptocurrency?
+  VALUE_PARAMETER name:onCryptoSelected index:2 type:kotlin.Function1<com.meetmyartist.miner.data.model.Cryptocurrency, kotlin.Unit>
+  VALUE_PARAMETER name:onDismiss index:3 type:kotlin.Function0<kotlin.Unit>
+  BLOCK_BODY
+    VAR PROPERTY_DELEGATE name:searchQuery$delegate type:androidx.compose.runtime.MutableState<kotlin.String> [val]
+      CALL 'public final fun remember <T> (calculation: @[DisallowComposableCalls] kotlin.Function0<T of androidx.compose.runtime.ComposablesKt.remember>): T of androidx.compose.runtime.ComposablesKt.remember [inline] declared in androidx.compose.runtime.ComposablesKt' type=androidx.compose.runtime.MutableState<kotlin.String> origin=null
+        <T>: androidx.compose.runtime.MutableState<kotlin.String>
+        calculation: BLOCK type=kotlin.Function0<androidx.compose.runtime.MutableState<kotlin.String>> origin=LAMBDA
+          COMPOSITE type=kotlin.Unit origin=null
+          FUNCTION_REFERENCE 'private final fun CryptocurrencySelectorDialog$lambda$0 (): androidx.compose.runtime.MutableState<kotlin.String> declared in com.meetmyartist.miner.ui.components.CryptocurrencySelectorDialogKt' type=kotlin.Function0<androidx.compose.runtime.MutableState<kotlin.String>> origin=INLINE_LAMBDA reflectionTarget=null
+    VAR PROPERTY_DELEGATE name:showCPUFriendlyOnly$delegate type:androidx.compose.runtime.MutableState<kotlin.Boolean> [val]
+      CALL 'public final fun remember <T> (calculation: @[DisallowComposableCalls] kotlin.Function0<T of androidx.compose.runtime.ComposablesKt.remember>): T of androidx.compose.runtime.ComposablesKt.remember [inline] declared in androidx.compose.runtime.ComposablesKt' type=androidx.compose.runtime.MutableState<kotlin.Boolean> origin=null
+        <T>: androidx.compose.runtime.MutableState<kotlin.Boolean>
+        calculation: BLOCK type=kotlin.Function0<androidx.compose.runtime.MutableState<kotlin.Boolean>> origin=LAMBDA
+          COMPOSITE type=kotlin.Unit origin=null
+          FUNCTION_REFERENCE 'private final fun CryptocurrencySelectorDialog$lambda$3 (): androidx.compose.runtime.MutableState<kotlin.Boolean> declared in com.meetmyartist.miner.ui.components.CryptocurrencySelectorDialogKt' type=kotlin.Function0<androidx.compose.runtime.MutableState<kotlin.Boolean>> origin=INLINE_LAMBDA reflectionTarget=null
+    VAR name:filteredCryptos type:kotlin.collections.List<com.meetmyartist.miner.data.model.Cryptocurrency> [val]
+      CALL 'public final fun remember <T> (key1: kotlin.Any?, key2: kotlin.Any?, key3: kotlin.Any?, calculation: @[DisallowComposableCalls] kotlin.Function0<T of androidx.compose.runtime.ComposablesKt.remember>): T of androidx.compose.runtime.ComposablesKt.remember [inline] declared in androidx.compose.runtime.ComposablesKt' type=kotlin.collections.List<com.meetmyartist.miner.data.model.Cryptocurrency> origin=null
+        <T>: kotlin.collections.List<com.meetmyartist.miner.data.model.Cryptocurrency>
+        key1: GET_VAR 'cryptos: kotlin.collections.List<com.meetmyartist.miner.data.model.Cryptocurrency> declared in com.meetmyartist.miner.ui.components.CryptocurrencySelectorDialogKt.CryptocurrencySelectorDialog' type=kotlin.collections.List<com.meetmyartist.miner.data.model.Cryptocurrency> origin=null
+        key2: CALL 'private final fun CryptocurrencySelectorDialog$lambda$1 ($searchQuery$delegate: androidx.compose.runtime.MutableState<kotlin.String>): kotlin.String declared in com.meetmyartist.miner.ui.components.CryptocurrencySelectorDialogKt' type=kotlin.String origin=GET_LOCAL_PROPERTY
+          $searchQuery$delegate: GET_VAR 'val searchQuery$delegate: androidx.compose.runtime.MutableState<kotlin.String> [val] declared in com.meetmyartist.miner.ui.components.CryptocurrencySelectorDialogKt.CryptocurrencySelectorDialog' type=androidx.compose.runtime.MutableState<kotlin.String> origin=null
+        key3: CALL 'private final fun CryptocurrencySelectorDialog$lambda$4 ($showCPUFriendlyOnly$delegate: androidx.compose.runtime.MutableState<kotlin.Boolean>): kotlin.Boolean declared in com.meetmyartist.miner.ui.components.CryptocurrencySelectorDialogKt' type=kotlin.Boolean origin=GET_LOCAL_PROPERTY
+          $showCPUFriendlyOnly$delegate: GET_VAR 'val showCPUFriendlyOnly$delegate: androidx.compose.runtime.MutableState<kotlin.Boolean> [val] declared in com.meetmyartist.miner.ui.components.CryptocurrencySelectorDialogKt.CryptocurrencySelectorDialog' type=androidx.compose.runtime.MutableState<kotlin.Boolean> origin=null
+        calculation: BLOCK type=kotlin.Function0<kotlin.collections.List<com.meetmyartist.miner.data.model.Cryptocurrency>> origin=LAMBDA
+          COMPOSITE type=kotlin.Unit origin=null
+          FUNCTION_REFERENCE 'private final fun CryptocurrencySelectorDialog$lambda$7 ($cryptos: kotlin.collections.List<com.meetmyartist.miner.data.model.Cryptocurrency>, $searchQuery$delegate: androidx.compose.runtime.MutableState<kotlin.String>, $showCPUFriendlyOnly$delegate: androidx.compose.runtime.MutableState<kotlin.Boolean>): kotlin.collections.List<com.meetmyartist.miner.data.model.Cryptocurrency> declared in com.meetmyartist.miner.ui.components.CryptocurrencySelectorDialogKt' type=kotlin.Function0<kotlin.collections.List<com.meetmyartist.miner.data.model.Cryptocurrency>> origin=INLINE_LAMBDA reflectionTarget=null
+            $cryptos: GET_VAR 'cryptos: kotlin.collections.List<com.meetmyartist.miner.data.model.Cryptocurrency> declared in com.meetmyartist.miner.ui.components.CryptocurrencySelectorDialogKt.CryptocurrencySelectorDialog' type=kotlin.collections.List<com.meetmyartist.miner.data.model.Cryptocurrency> origin=null
+            $searchQuery$delegate: GET_VAR 'val searchQuery$delegate: androidx.compose.runtime.MutableState<kotlin.String> [val] declared in com.meetmyartist.miner.ui.components.CryptocurrencySelectorDialogKt.CryptocurrencySelectorDialog' type=androidx.compose.runtime.MutableState<kotlin.String> origin=null
+            $showCPUFriendlyOnly$delegate: GET_VAR 'val showCPUFriendlyOnly$delegate: androidx.compose.runtime.MutableState<kotlin.Boolean> [val] declared in com.meetmyartist.miner.ui.components.CryptocurrencySelectorDialogKt.CryptocurrencySelectorDialog' type=androidx.compose.runtime.MutableState<kotlin.Boolean> origin=null
+    CALL 'public final fun Dialog$default (onDismissRequest: kotlin.Function0<kotlin.Unit>, properties: androidx.compose.ui.window.DialogProperties?, content: @[Composable] kotlin.Function0<kotlin.Unit>, $mask0: kotlin.Int, $handler: kotlin.Any?): kotlin.Unit declared in androidx.compose.ui.window.AndroidDialog_androidKt' type=kotlin.Unit origin=DEFAULT_DISPATCH_CALL
+      onDismissRequest: GET_VAR 'onDismiss: kotlin.Function0<kotlin.Unit> declared in com.meetmyartist.miner.ui.components.CryptocurrencySelectorDialogKt.CryptocurrencySelectorDialog' type=kotlin.Function0<kotlin.Unit> origin=null
+      properties: COMPOSITE type=androidx.compose.ui.window.DialogProperties? origin=DEFAULT_VALUE
+        CONST Null type=androidx.compose.ui.window.DialogProperties? value=null
+      content: BLOCK type=kotlin.Function0<kotlin.Unit> origin=LAMBDA
+        COMPOSITE type=kotlin.Unit origin=null
+        CALL 'public final fun <jvm-indy> <T> (dynamicCall: T of kotlin.jvm.internal.<jvm-indy>, bootstrapMethodHandle: kotlin.Any, vararg bootstrapMethodArguments: kotlin.Any): T of kotlin.jvm.internal.<jvm-indy> declared in kotlin.jvm.internal' type=kotlin.Function0<kotlin.Unit> origin=null
+          <T>: kotlin.Function0<kotlin.Unit>
+          dynamicCall: CALL 'public final fun invoke (p0: kotlin.collections.List<com.meetmyartist.miner.data.model.Cryptocurrency>, p1: kotlin.Function0<kotlin.Unit>, p2: androidx.compose.runtime.MutableState<kotlin.String>, p3: androidx.compose.runtime.MutableState<kotlin.Boolean>, p4: com.meetmyartist.miner.data.model.Cryptocurrency?, p5: kotlin.Function1<com.meetmyartist.miner.data.model.Cryptocurrency, kotlin.Unit>): kotlin.Function0<kotlin.Unit> declared in kotlin.jvm.internal.invokeDynamic' type=kotlin.Function0<kotlin.Unit> origin=null
+            p0: GET_VAR 'val filteredCryptos: kotlin.collections.List<com.meetmyartist.miner.data.model.Cryptocurrency> [val] declared in com.meetmyartist.miner.ui.components.CryptocurrencySelectorDialogKt.CryptocurrencySelectorDialog' type=kotlin.collections.List<com.meetmyartist.miner.data.model.Cryptocurrency> origin=null
+            p1: GET_VAR 'onDismiss: kotlin.Function0<kotlin.Unit> declared in com.meetmyartist.miner.ui.components.CryptocurrencySelectorDialogKt.CryptocurrencySelectorDialog' type=kotlin.Function0<kotlin.Unit> origin=null
+            p2: GET_VAR 'val searchQuery$delegate: androidx.compose.runtime.MutableState<kotlin.String> [val] declared in com.meetmyartist.miner.ui.components.CryptocurrencySelectorDialogKt.CryptocurrencySelectorDialog' type=androidx.compose.runtime.MutableState<kotlin.String> origin=null
+            p3: GET_VAR 'val showCPUFriendlyOnly$delegate: androidx.compose.runtime.MutableState<kotlin.Boolean> [val] declared in com.meetmyartist.miner.ui.components.CryptocurrencySelectorDialogKt.CryptocurrencySelectorDialog' type=androidx.compose.runtime.MutableState<kotlin.Boolean> origin=null
+            p4: GET_VAR 'selectedCrypto: com.meetmyartist.miner.data.model.Cryptocurrency? declared in com.meetmyartist.miner.ui.components.CryptocurrencySelectorDialogKt.CryptocurrencySelectorDialog' type=com.meetmyartist.miner.data.model.Cryptocurrency? origin=null
+            p5: GET_VAR 'onCryptoSelected: kotlin.Function1<com.meetmyartist.miner.data.model.Cryptocurrency, kotlin.Unit> declared in com.meetmyartist.miner.ui.components.CryptocurrencySelectorDialogKt.CryptocurrencySelectorDialog' type=kotlin.Function1<com.meetmyartist.miner.data.model.Cryptocurrency, kotlin.Unit> origin=null
+          bootstrapMethodHandle: CALL 'public final fun <jvm-method-handle> (tag: kotlin.Int, owner: kotlin.String, name: kotlin.String, descriptor: kotlin.String, isInterface: kotlin.Boolean): kotlin.Any declared in kotlin.jvm.internal' type=kotlin.Any origin=null
+            tag: CONST Int type=kotlin.Int value=6
+            owner: CONST String type=kotlin.String value="java/lang/invoke/LambdaMetafactory"
+            name: CONST String type=kotlin.String value="metafactory"
+            descriptor: CONST String type=kotlin.String value="(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;"
+            isInterface: CONST Boolean type=kotlin.Boolean value=false
+          bootstrapMethodArguments: VARARG type=kotlin.Array<kotlin.Any> varargElementType=kotlin.Any
+            CALL 'public final fun <jvm-original-method-type> (method: kotlin.Any): kotlin.Any declared in kotlin.jvm.internal' type=kotlin.Any origin=null
+              method: RAW_FUNCTION_REFERENCE 'public abstract fun invoke (): R of kotlin.Function0 [operator] declared in kotlin.Function0' type=kotlin.Any
+            RAW_FUNCTION_REFERENCE 'private final fun CryptocurrencySelectorDialog$lambda$18 ($filteredCryptos: kotlin.collections.List<com.meetmyartist.miner.data.model.Cryptocurrency>, $onDismiss: kotlin.Function0<kotlin.Unit>, $searchQuery$delegate: androidx.compose.runtime.MutableState<kotlin.String>, $showCPUFriendlyOnly$delegate: androidx.compose.runtime.MutableState<kotlin.Boolean>, $selectedCrypto: com.meetmyartist.miner.data.model.Cryptocurrency?, $onCryptoSelected: kotlin.Function1<com.meetmyartist.miner.data.model.Cryptocurrency, kotlin.Unit>): kotlin.Unit? declared in com.meetmyartist.miner.ui.components.CryptocurrencySelectorDialogKt' type=kotlin.Any
+            CALL 'public final fun <jvm-original-method-type> (method: kotlin.Any): kotlin.Any declared in kotlin.jvm.internal' type=kotlin.Any origin=null
+              method: RAW_FUNCTION_REFERENCE 'public abstract fun invoke (): kotlin.Unit? [fake_override,operator] declared in kotlin.jvm.internal.invokeDynamic.<fake>' type=kotlin.Any
+      $mask0: CONST Int type=kotlin.Int value=2
+      $handler: CONST Null type=kotlin.Any? value=null
+
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate(FunctionCodegen.kt:50)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate$default(FunctionCodegen.kt:42)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generateMethodNode(ClassCodegen.kt:385)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generateMethod(ClassCodegen.kt:402)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generate(ClassCodegen.kt:169)
+	at org.jetbrains.kotlin.backend.jvm.FileCodegen.lower(JvmPhases.kt:41)
+	at org.jetbrains.kotlin.backend.common.phaser.PhaseBuildersKt.makeIrFilePhase$lambda$5(PhaseBuilders.kt:114)
+	at org.jetbrains.kotlin.backend.common.phaser.PhaseBuildersKt$createSimpleNamedCompilerPhase$1.phaseBody(PhaseBuilders.kt:71)
+	at org.jetbrains.kotlin.backend.common.phaser.SimpleNamedCompilerPhase.phaseBody(CompilerPhase.kt:226)
+	at org.jetbrains.kotlin.backend.common.phaser.AbstractNamedCompilerPhase.invoke(CompilerPhase.kt:113)
+	at org.jetbrains.kotlin.backend.common.phaser.PerformByIrFilePhase.invokeSequential(performByIrFile.kt:62)
+	... 45 more
+Caused by: org.jetbrains.kotlin.codegen.CompilationException: Back-end (JVM) Internal error: Couldn't inline method call: CALL 'public final fun remember <T> (calculation: @[DisallowComposableCalls] kotlin.Function0<T of androidx.compose.runtime.ComposablesKt.remember>): T of androidx.compose.runtime.ComposablesKt.remember [inline] declared in androidx.compose.runtime.ComposablesKt' type=androidx.compose.runtime.MutableState<kotlin.String> origin=null
+Method: null
+File is unknown
+The root cause java.lang.IllegalStateException was thrown at: org.jetbrains.kotlin.codegen.inline.SourceCompilerForInlineKt.getMethodNode(SourceCompilerForInline.kt:118)
+	at org.jetbrains.kotlin.codegen.inline.InlineCodegen.performInline(InlineCodegen.kt:65)
+	at org.jetbrains.kotlin.backend.jvm.codegen.IrInlineCodegen.genInlineCall(IrInlineCodegen.kt:162)
+	at org.jetbrains.kotlin.backend.jvm.codegen.IrInlineCallGenerator.genCall(IrInlineCallGenerator.kt:36)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitCall(ExpressionCodegen.kt:647)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitCall(ExpressionCodegen.kt:137)
+	at org.jetbrains.kotlin.ir.expressions.IrCall.accept(IrCall.kt:24)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitVariable(ExpressionCodegen.kt:784)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitVariable(ExpressionCodegen.kt:137)
+	at org.jetbrains.kotlin.ir.declarations.IrVariable.accept(IrVariable.kt:36)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitStatementContainer(ExpressionCodegen.kt:573)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlockBody(ExpressionCodegen.kt:578)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlockBody(ExpressionCodegen.kt:137)
+	at org.jetbrains.kotlin.ir.expressions.IrBlockBody.accept(IrBlockBody.kt:20)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.generate(ExpressionCodegen.kt:239)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.doGenerate(FunctionCodegen.kt:121)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate(FunctionCodegen.kt:46)
+	... 55 more
+Caused by: java.lang.IllegalStateException: couldn't find inline method Landroidx/compose/runtime/ComposablesKt;.remember(Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
+	at org.jetbrains.kotlin.codegen.inline.SourceCompilerForInlineKt.getMethodNode(SourceCompilerForInline.kt:118)
+	at org.jetbrains.kotlin.codegen.inline.SourceCompilerForInlineKt.loadCompiledInlineFunction(SourceCompilerForInline.kt:96)
+	at org.jetbrains.kotlin.backend.jvm.codegen.IrSourceCompilerForInline.compileInlineFunction(IrSourceCompilerForInline.kt:91)
+	at org.jetbrains.kotlin.codegen.inline.InlineCodegen.compileInline(InlineCodegen.kt:43)
+	at org.jetbrains.kotlin.codegen.inline.InlineCodegen.performInline(InlineCodegen.kt:51)
+	... 70 more
+
+
+> Task :app:compileDebugKotlin FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Internal compiler error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 1m 20s
+38 actionable tasks: 38 executed

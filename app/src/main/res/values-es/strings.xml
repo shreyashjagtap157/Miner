@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Minero</string>
+    <string name="default_web_client_id">SU_WEB_CLIENT_ID</string>
+    <string name="cloud_sync_disabled_message">Inicie sesión para habilitar la sincronización en la nube</string>
+    <string name="biometric_not_available">La autenticación biométrica no está disponible en este dispositivo</string>
+    <string name="widget_description">Muestra el estado de la minería, el hashrate y la temperatura</string>
+</resources>

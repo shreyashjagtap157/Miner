@@ -1,0 +1,27 @@
+[
+{
+  "directory": "D:/Project/Miner/app/.cxx/Debug/1x4k5533/x86_64",
+  "command": "D:\\Android\\Sdk\\ndk\\26.1.10909125\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=x86_64-none-linux-android26 --sysroot=D:/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dminer_native_EXPORTS -ID:/Project/Miner/app/src/main/cpp/mining -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O3 -ffast-math -fno-limit-debug-info  -fPIC -std=gnu++17 -o CMakeFiles\\miner_native.dir\\mining\\native_miner.cpp.o -c D:\\Project\\Miner\\app\\src\\main\\cpp\\mining\\native_miner.cpp",
+  "file": "D:\\Project\\Miner\\app\\src\\main\\cpp\\mining\\native_miner.cpp"
+},
+{
+  "directory": "D:/Project/Miner/app/.cxx/Debug/1x4k5533/x86_64",
+  "command": "D:\\Android\\Sdk\\ndk\\26.1.10909125\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=x86_64-none-linux-android26 --sysroot=D:/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dminer_native_EXPORTS -ID:/Project/Miner/app/src/main/cpp/mining -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O3 -ffast-math -fno-limit-debug-info  -fPIC -std=gnu++17 -o CMakeFiles\\miner_native.dir\\mining\\sha256.cpp.o -c D:\\Project\\Miner\\app\\src\\main\\cpp\\mining\\sha256.cpp",
+  "file": "D:\\Project\\Miner\\app\\src\\main\\cpp\\mining\\sha256.cpp"
+},
+{
+  "directory": "D:/Project/Miner/app/.cxx/Debug/1x4k5533/x86_64",
+  "command": "D:\\Android\\Sdk\\ndk\\26.1.10909125\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=x86_64-none-linux-android26 --sysroot=D:/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dminer_native_EXPORTS -ID:/Project/Miner/app/src/main/cpp/mining -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O3 -ffast-math -fno-limit-debug-info  -fPIC -std=gnu++17 -o CMakeFiles\\miner_native.dir\\mining\\randomx_light.cpp.o -c D:\\Project\\Miner\\app\\src\\main\\cpp\\mining\\randomx_light.cpp",
+  "file": "D:\\Project\\Miner\\app\\src\\main\\cpp\\mining\\randomx_light.cpp"
+},
+{
+  "directory": "D:/Project/Miner/app/.cxx/Debug/1x4k5533/x86_64",
+  "command": "D:\\Android\\Sdk\\ndk\\26.1.10909125\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=x86_64-none-linux-android26 --sysroot=D:/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dminer_native_EXPORTS -ID:/Project/Miner/app/src/main/cpp/mining -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O3 -ffast-math -fno-limit-debug-info  -fPIC -std=gnu++17 -o CMakeFiles\\miner_native.dir\\mining\\blake3.cpp.o -c D:\\Project\\Miner\\app\\src\\main\\cpp\\mining\\blake3.cpp",
+  "file": "D:\\Project\\Miner\\app\\src\\main\\cpp\\mining\\blake3.cpp"
+},
+{
+  "directory": "D:/Project/Miner/app/.cxx/Debug/1x4k5533/x86_64",
+  "command": "D:\\Android\\Sdk\\ndk\\26.1.10909125\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=x86_64-none-linux-android26 --sysroot=D:/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dminer_native_EXPORTS -ID:/Project/Miner/app/src/main/cpp/mining -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O3 -ffast-math -fno-limit-debug-info  -fPIC -std=gnu++17 -o CMakeFiles\\miner_native.dir\\mining\\scrypt.cpp.o -c D:\\Project\\Miner\\app\\src\\main\\cpp\\mining\\scrypt.cpp",
+  "file": "D:\\Project\\Miner\\app\\src\\main\\cpp\\mining\\scrypt.cpp"
+}
+]

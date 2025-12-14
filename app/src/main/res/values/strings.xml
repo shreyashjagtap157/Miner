@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Miner</string>
+    <string name="default_web_client_id">YOUR_WEB_CLIENT_ID</string>
+    <string name="cloud_sync_disabled_message">Sign in to enable cloud sync</string>
+    <string name="biometric_not_available">Biometric authentication unavailable on this device</string>
+    <string name="widget_description">Shows mining status, hashrate, and temperature</string>
+    <string name="welcome">Welcome to Crypto Miner!</string>
+    <string name="start_mining">Start Mining</string>
+    <string name="error_occurred">An error occurred</string>
+</resources>

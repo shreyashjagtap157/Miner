@@ -1,0 +1,167 @@
+MIT License
+
+Copyright (c) 2025 Crypto Miner Contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+## IMPORTANT DISCLAIMERS AND NOTICES
+
+### USE AT YOUR OWN RISK
+
+This cryptocurrency mining application is provided "AS IS" for educational
+and experimental purposes. The developers make no warranties or guarantees
+regarding:
+
+1. **Profitability**: Mobile cryptocurrency mining is generally not profitable
+   and should not be relied upon as a source of income.
+
+2. **Device Safety**: Cryptocurrency mining generates significant heat and
+   stress on device components. Extended use may:
+   - Reduce battery lifespan
+   - Cause overheating
+   - Reduce overall device lifespan
+   - Void manufacturer warranties
+   - Cause permanent hardware damage
+
+3. **Earnings**: No guarantee is made regarding mining rewards, payouts, or
+   cryptocurrency earnings.
+
+4. **Accuracy**: Statistics, hashrates, and calculations are estimates and
+   may not be accurate.
+
+5. **Security**: While the app implements security best practices, users are
+   responsible for:
+   - Securing their private keys
+   - Verifying wallet addresses
+   - Using reputable mining pools
+   - Protecting their devices
+
+### LIABILITY LIMITATIONS
+
+The developers and contributors of this software shall not be liable for:
+
+- Physical damage to devices
+- Financial losses from mining activities
+- Lost cryptocurrency or wallet issues
+- Data loss or corruption
+- Battery damage or reduced lifespan
+- Voided device warranties
+- Electricity costs
+- Any other direct or indirect damages
+
+### USER RESPONSIBILITIES
+
+By using this application, you agree to:
+
+1. **Monitor Device Temperature**: Regularly check and prevent overheating
+2. **Follow Safety Guidelines**: Use thermal protection features
+3. **Verify Information**: Double-check all wallet addresses and pool settings
+4. **Accept Risks**: Acknowledge that mining may damage your device
+5. **Check Warranty**: Understand your device warranty terms
+6. **Use Responsibly**: Not hold developers liable for any damages
+7. **Local Laws**: Comply with all applicable laws and regulations regarding
+   cryptocurrency mining in your jurisdiction
+
+### THIRD-PARTY SERVICES
+
+This app integrates with third-party services:
+
+- **Google Sign-In**: Subject to Google's Terms of Service
+- **Mining Pools**: Subject to individual pool terms and fees
+- **Wallet Services**: Users are responsible for wallet security
+- **Cryptocurrency Networks**: Subject to network rules and risks
+
+The developers are not affiliated with or responsible for these services.
+
+### EDUCATIONAL PURPOSE
+
+This application is primarily intended for:
+
+- Learning about cryptocurrency mining
+- Understanding blockchain technology
+- Experimenting with mining algorithms
+- Educational and research purposes
+
+It is NOT recommended for:
+
+- Primary income generation
+- Professional mining operations
+- High-profit mining activities
+
+### REGULATORY COMPLIANCE
+
+Users are solely responsible for:
+
+- Complying with local cryptocurrency regulations
+- Tax reporting of any mining income
+- Energy usage regulations
+- Any other applicable laws
+
+### MINIMUM AGE
+
+Users must be of legal age in their jurisdiction to:
+
+- Own and trade cryptocurrencies
+- Enter into financial transactions
+- Agree to terms of service
+
+### UPDATES AND CHANGES
+
+The developers reserve the right to:
+
+- Modify the software at any time
+- Change features without notice
+- Discontinue support or updates
+- Modify these terms
+
+### NO WARRANTY
+
+THIS SOFTWARE IS PROVIDED WITHOUT WARRANTY OF ANY KIND. THE DEVELOPERS
+DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND
+NON-INFRINGEMENT.
+
+### CONTACT AND SUPPORT
+
+Support is provided on a best-effort basis through:
+
+- GitHub Issues
+- Documentation
+- Community discussions
+
+No guarantee of response time or resolution is made.
+
+---
+
+## ACKNOWLEDGMENT
+
+BY DOWNLOADING, INSTALLING, OR USING THIS APPLICATION, YOU ACKNOWLEDGE THAT
+YOU HAVE READ THIS LICENSE AND DISCLAIMER, UNDERSTAND IT, AND AGREE TO BE
+BOUND BY ITS TERMS AND CONDITIONS.
+
+IF YOU DO NOT AGREE TO THESE TERMS, DO NOT USE THIS SOFTWARE.
+
+---
+
+**Last Updated**: October 22, 2025
+
+For questions or concerns regarding this license, please open an issue on
+the project's GitHub repository.

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Mineur</string>
+    <string name="default_web_client_id">VOTRE_WEB_CLIENT_ID</string>
+    <string name="cloud_sync_disabled_message">Connectez-vous pour activer la synchronisation cloud</string>
+    <string name="biometric_not_available">Authentification biométrique non disponible sur cet appareil</string>
+    <string name="widget_description">Widget info: minage, hashrate, temperature</string>
+</resources>
+
+

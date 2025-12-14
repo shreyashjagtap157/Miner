@@ -1,0 +1,1 @@
+D:\Project\Miner\app\src\main\cpp\CMakeLists.txt
