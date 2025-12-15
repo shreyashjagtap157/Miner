@@ -23,6 +23,7 @@ add_library(miner_native SHARED
     mining/randomx_light.cpp
     mining/blake3.cpp
     mining/scrypt.cpp
+    mining/benchmark.cpp
 )
 
 # Find Android log library
