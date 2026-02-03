@@ -1,0 +1,21 @@
+"""
+Profit switching module for algorithm optimization.
+"""
+
+from mining.profit_switching import (
+    ProfitSwitcher,
+    ProfitabilityCalculator,
+    CoinInfo,
+    MiningHardware,
+    ProfitabilityMetrics,
+    AlgorithmType,
+)
+
+__all__ = [
+    "ProfitSwitcher",
+    "ProfitabilityCalculator",
+    "CoinInfo",
+    "MiningHardware",
+    "ProfitabilityMetrics",
+    "AlgorithmType",
+]

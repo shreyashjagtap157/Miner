@@ -439,6 +439,10 @@ class MiningEngine @Inject constructor(
         }
     }
     
+    // CPU usage tracking state
+    private var lastCpuIdle: Long = 0
+    private var lastCpuTotal: Long = 0
+    
     private fun getCpuUsage(): Float {
         return try {
             val stat = RandomAccessFile("/proc/stat", "r")
@@ -449,9 +453,21 @@ class MiningEngine @Inject constructor(
             val idle = tokens[4].toLong()
             val total = tokens.slice(1..7).sumOf { it.toLong() }
             
-            // This is simplified; proper implementation would track deltas
-            val usage = (1.0f - (idle.toFloat() / total.toFloat())) * 100f
-            min(usage, 100f)
+            // Calculate delta from last measurement
+            val deltaIdle = idle - lastCpuIdle
+            val deltaTotal = total - lastCpuTotal
+            
+            // Update for next measurement
+            lastCpuIdle = idle
+            lastCpuTotal = total
+            
+            // Calculate actual CPU usage from delta
+            if (deltaTotal > 0 && lastCpuTotal > 0) {
+                val usage = ((deltaTotal - deltaIdle).toFloat() / deltaTotal.toFloat()) * 100f
+                min(usage, 100f)
+            } else {
+                50f // Default on first call
+            }
         } catch (e: Exception) {
             50f // Default value
         }

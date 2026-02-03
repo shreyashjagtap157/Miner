@@ -1,0 +1,121 @@
+pool_management:
+  enabled: true
+  primary_pool:
+    name: "primary"
+    url: "stratum+tcp://pool.example.com:3333"
+    username: "your_username"
+    password: "your_password"
+    difficulty_multiplier: 1.0
+  backup_pools:
+    - name: "backup_1"
+      url: "stratum+tcp://backup1.example.com:3333"
+      username: "your_username"
+      password: "your_password"
+    - name: "backup_2"
+      url: "stratum+tcp://backup2.example.com:3333"
+      username: "your_username"
+      password: "your_password"
+  health_check_interval_sec: 60
+  health_check_timeout_sec: 10
+  failover_enabled: true
+  failover_threshold_misses: 5
+  auto_reconnect_enabled: true
+  reconnect_delay_sec: 5
+
+profit_switching:
+  enabled: true
+  update_interval_sec: 300  # Check every 5 minutes
+  min_profitability_ratio: 1.05  # 5% minimum improvement
+  algorithms:
+    - name: "sha256d"
+      enabled: true
+      coin: "BTC"
+      pool_fee_pct: 1.0
+    - name: "ethash"
+      enabled: true
+      coin: "ETH"
+      pool_fee_pct: 1.0
+    - name: "randomx"
+      enabled: true
+      coin: "XMR"
+      pool_fee_pct: 1.0
+    - name: "kawpow"
+      enabled: true
+      coin: "RVN"
+      pool_fee_pct: 1.0
+  hardware:
+    gpu_models:
+      - "RTX 3090"
+      - "RTX 3080"
+      - "RTX 3070"
+      - "RTX 2080"
+  cost_factors:
+    cost_per_kwh: 0.10
+    power_loss_pct: 0.05
+    cooling_overhead_pct: 0.10
+
+mining:
+  enabled: true
+  devices:
+    - id: "GPU_0"
+      type: "GPU"
+      model: "NVIDIA RTX 3090"
+      enabled: true
+      power_limit_w: 350
+    - id: "GPU_1"
+      type: "GPU"
+      model: "NVIDIA RTX 3080"
+      enabled: true
+      power_limit_w: 320
+  difficulty_scaling: true
+  share_acceptance_threshold: 0.95
+
+monitoring:
+  enabled: true
+  command_center_enabled: true
+  monitor_port: 5000
+  alert_level: "warning"  # debug, info, warning, error, critical
+  metrics:
+    - hashrate
+    - shares_per_second
+    - temperature
+    - power_draw
+    - pool_connection_status
+  alert_rules:
+    high_temperature:
+      enabled: true
+      threshold_c: 85
+      duration_sec: 60
+    low_hashrate:
+      enabled: true
+      threshold_mhs: 50
+      duration_sec: 120
+    pool_disconnected:
+      enabled: true
+      action: "failover"
+    high_reject_rate:
+      enabled: true
+      threshold_pct: 10
+      action: "restart_mining"
+
+device_registry:
+  enabled: true
+  auto_detect_devices: true
+  heartbeat_interval_sec: 30
+  device_timeout_sec: 120
+
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "./logs/mining.log"
+  max_file_size_mb: 100
+  backup_count: 5
+
+api:
+  enabled: true
+  port: 5000
+  endpoints:
+    - /status
+    - /stats
+    - /config
+    - /command
